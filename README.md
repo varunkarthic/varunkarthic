@@ -44,7 +44,7 @@ I'm a Computer Science student who likes building things and figuring out how th
 </tr>
 </table>
 
-## GitHub
+## GitHub Statistics
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.shion.dev/api?username=varunkarthic&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" alt="GitHub Stats">
