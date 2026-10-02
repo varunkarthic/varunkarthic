@@ -1,4 +1,4 @@
-# Varun Karthic <a href="https://linkedin.com/in/varunkarthic"><img height="24" src="https://img.shields.io/badge/-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a> <a href="mailto:varun.k2@ahduni.edu.in"><img height="24" src="https://img.shields.io/badge/-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+# Varun Karthic
 
 I'm a Computer Science student who likes building things and figuring out how they work. I've been coding since 2019, mostly in Python, and recently started working more with C++ and Java. Most of my projects begin as random ideas, and I usually end up learning by building, breaking, debugging, and understanding things for myself.
 
@@ -7,6 +7,8 @@ I'm a Computer Science student who likes building things and figuring out how th
 <table>
 <tr>
 <td width="60%" valign="middle">
+
+<strong>Core</strong><br><br>
 
 <img height="28" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" alt="Python">&nbsp;
 <img height="28" src="https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white" alt="Docker">&nbsp;
@@ -19,7 +21,11 @@ I'm a Computer Science student who likes building things and figuring out how th
 <img height="28" src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium">&nbsp;
 <img height="28" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">&nbsp;
 <img height="28" src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">&nbsp;
-<img height="28" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">&nbsp;
+<img height="28" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
+
+<br><br><br>
+<strong>Also work with</strong><br><br>
+
 <img height="28" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">&nbsp;
 <img height="28" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">&nbsp;
 <img height="28" src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">&nbsp;
