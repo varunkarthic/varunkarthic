@@ -8,8 +8,7 @@ I'm a Computer Science student who likes building things and figuring out how th
 <tr>
 <td width="60%" valign="middle">
 
-<strong>Core</strong><br><br>
-
+<strong>Core</strong><br>
 <img height="28" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" alt="Python">&nbsp;
 <img height="28" src="https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white" alt="Docker">&nbsp;
 <img height="28" src="https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash">&nbsp;
@@ -23,9 +22,8 @@ I'm a Computer Science student who likes building things and figuring out how th
 <img height="28" src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">&nbsp;
 <img height="28" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
 
-<br><br><br>
-<strong>Also work with</strong><br><br>
-
+<br><br>
+<strong>Also work with</strong><br>
 <img height="28" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">&nbsp;
 <img height="28" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">&nbsp;
 <img height="28" src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">&nbsp;
