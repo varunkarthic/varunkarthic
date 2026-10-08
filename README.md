@@ -1,3 +1,4 @@
+
 # Varun Karthic
 
 I'm a Computer Science student who likes building things and figuring out how they work. I've been coding since 2019, mostly in Python, and recently started working more with C++ and Java. Most of my projects begin as random ideas, and I usually end up learning by building, breaking, debugging, and understanding things for myself.
