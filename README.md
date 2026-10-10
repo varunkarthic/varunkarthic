@@ -49,5 +49,5 @@ I'm a Computer Science student who likes building things and figuring out how th
 
 <p align="center">
   <img width="49%" src="./profile/stats.svg" alt="GitHub Stats">
-  <img width="49%" src="https://streak-stats.demolab.com/?user=varunkarthic&theme=github-dark-blue&hide_border=true" alt="GitHub Streak">
+  <img width="49%" src="./profile/streak.svg" alt="GitHub Streak">
 </p>
