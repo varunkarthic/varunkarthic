@@ -1,0 +1,6 @@
+# Local implementation instructions must not be published.
+IMPLEMENTATION_PROMPT.md
+
+# Local verification artifacts and macOS metadata.
+.local/
+.DS_Store

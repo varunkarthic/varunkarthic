@@ -39,7 +39,7 @@ I'm a Computer Science student who likes building things and figuring out how th
 </td>
 <td width="40%" valign="middle" align="center">
 
-<img width="100%" src="https://github-readme-stats.shion.dev/api/top-langs/?username=varunkarthic&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=8" alt="Most Used Languages">
+<img width="100%" src="./profile/top-langs.svg" alt="Most Used Languages">
 
 </td>
 </tr>
@@ -48,6 +48,6 @@ I'm a Computer Science student who likes building things and figuring out how th
 ## GitHub Statistics
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.shion.dev/api?username=varunkarthic&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" alt="GitHub Stats">
+  <img width="49%" src="./profile/stats.svg" alt="GitHub Stats">
   <img width="49%" src="https://streak-stats.demolab.com/?user=varunkarthic&theme=github-dark-blue&hide_border=true" alt="GitHub Streak">
 </p>
