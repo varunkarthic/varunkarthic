@@ -48,10 +48,10 @@ I'm a Computer Science student who likes building things and figuring out how th
 ## GitHub Statistics
 
 <p align="center">
-  <img src="./profile/last-updated.svg" alt="Last updated in India Standard Time">
+  <img width="49%" src="./profile/stats.svg" alt="GitHub Stats">
+  <img width="49%" src="./profile/streak.svg" alt="GitHub Streak">
 </p>
 
 <p align="center">
-  <img width="49%" src="./profile/stats.svg" alt="GitHub Stats">
-  <img width="49%" src="./profile/streak.svg" alt="GitHub Streak">
+  <img src="./profile/last-updated.svg" alt="Last updated in India Standard Time">
 </p>
