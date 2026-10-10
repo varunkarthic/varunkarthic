@@ -9,43 +9,18 @@ I'm a Computer Science student who likes building things and figuring out how th
 <tr>
 <td width="60%" valign="middle">
 
-<strong>Core</strong><br><br>
+<strong>Core</strong><br>
 <strong>Languages &amp; data</strong><br>
-<img height="24" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" alt="Python">
-<img height="24" src="https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash">
-<img height="24" src="https://img.shields.io/badge/SQLite-07405e?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
-<img height="24" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
-<img height="24" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
-
-<br><br>
+<img height="24" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" alt="Python">&nbsp;<img height="24" src="https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash">&nbsp;<img height="24" src="https://img.shields.io/badge/SQLite-07405e?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">&nbsp;<img height="24" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">&nbsp;<img height="24" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"><br><br>
 <strong>Backend &amp; automation</strong><br>
-<img height="24" src="https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-<img height="24" src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium">
-<img height="24" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-<img height="24" src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">
-
-<br><br>
+<img height="24" src="https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white" alt="Docker">&nbsp;<img height="24" src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium">&nbsp;<img height="24" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">&nbsp;<img height="24" src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask"><br><br>
 <strong>Tools</strong><br>
-<img height="24" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
-<img height="24" src="https://img.shields.io/badge/GitHub-121011?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-<img height="24" src="https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white" alt="Markdown">
-
-<br><br>
-<strong>Also work with</strong><br><br>
+<img height="24" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">&nbsp;<img height="24" src="https://img.shields.io/badge/GitHub-121011?style=flat-square&logo=github&logoColor=white" alt="GitHub">&nbsp;<img height="24" src="https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white" alt="Markdown"><br><br>
+<strong>Also work with</strong><br>
 <strong>Web</strong><br>
-<img height="24" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
-<img height="24" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
-<img height="24" src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
-<img height="24" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
-<img height="24" src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-<img height="24" src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm">
-
-<br><br>
+<img height="24" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">&nbsp;<img height="24" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">&nbsp;<img height="24" src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">&nbsp;<img height="24" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">&nbsp;<img height="24" src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">&nbsp;<img height="24" src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm"><br><br>
 <strong>Other languages &amp; frameworks</strong><br>
-<img height="24" src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
-<img height="24" src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
-<img height="24" src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" alt="C">
-<img height="24" src="https://img.shields.io/badge/JavaFX-FF0000?style=flat-square&logo=javafx&logoColor=white" alt="JavaFX">
+<img height="24" src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">&nbsp;<img height="24" src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">&nbsp;<img height="24" src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" alt="C">&nbsp;<img height="24" src="https://img.shields.io/badge/JavaFX-FF0000?style=flat-square&logo=javafx&logoColor=white" alt="JavaFX">
 
 </td>
 <td width="40%" valign="middle" align="center">
