@@ -38,16 +38,28 @@ To configure the optional token:
 3. Run the workflow manually and inspect its logs and both generated cards.
    Organization policies and token access still limit which data is visible.
 
-The stats card retains `include_all_commits=true`, which uses GitHub's commit
-search to count accessible commits across years. It is not a guarantee that
-every private commit, branch, or repository is counted. `count_private` is not
-a supported option in the current core handlers and is intentionally omitted.
+The stats card uses `include_all_commits=false` to match the default counting
+mode of `https://github-readme-stats.vercel.app/api?username=varunkarthic`.
+It counts GitHub commit contributions over the last year and uses that mode
+for ranking. All-time commit search uses a different API and can return a lower
+count than contribution history; the two modes are not directly comparable.
+`count_private` is not a supported option in the current core handlers and is
+intentionally omitted.
 The language card uses repository language data, not contribution counts;
 `include_all_commits` does not apply. With the default configuration it reflects
 owned, non-fork repositories visible to the token, subject to upstream query
 limits. It is not a measure of all code the user has contributed elsewhere.
 Private-data inclusion requires a suitably authorized token and must be verified
 after configuring it; successful public generation does not prove private totals.
+
+## Comparing cards from different services
+
+The public Vercel service caches cards, while this workflow takes a new snapshot
+when it runs. Even with matching options, the two can temporarily show different
+counts if one snapshot is older. Compare the commit label, options, token access,
+and response cache age before treating a difference as a workflow failure. A
+manual workflow run cannot refresh the external service's cache. The local card
+retains `github_dark`, hidden borders, and icons, independent of those counts.
 
 ## Settings and manual runs
 
