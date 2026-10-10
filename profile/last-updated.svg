@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="292" height="28" role="img" aria-label="Last updated: 10 Oct 2026, 04:46 PM IST">
-  <title>Last updated: 10 Oct 2026, 04:46 PM IST</title>
-  <rect width="292" height="28" rx="4" fill="#0D1117"/>
-  <path fill="#1F6FEB" d="M0 4a4 4 0 0 1 4-4h104v28H4a4 4 0 0 1-4-4z"/>
-  <text x="56" y="18" fill="#FFFFFF" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">Last updated</text>
-  <text x="200" y="18" fill="#58A6FF" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">10 Oct 2026, 04:46 PM IST</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="34" role="img" aria-label="Last updated: 10 Oct 2026, 04:50 PM IST">
+  <title>Last updated: 10 Oct 2026, 04:50 PM IST</title>
+  <rect x="0.5" y="0.5" width="369" height="33" rx="6" fill="#0D1117" stroke="#30363D"/>
+  <path d="M17 17a7 7 0 1 1 14 0a7 7 0 1 1-14 0" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+  <path d="M24 12.5v4.8l3 1.8" fill="none" stroke="#58A6FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="21" fill="#C9D1D9" font-family="Verdana,DejaVu Sans,sans-serif" font-size="10" font-weight="600" letter-spacing=".5" text-anchor="middle">LAST UPDATED</text>
+  <path d="M145 7v20" stroke="#30363D"/>
+  <text x="258" y="21" fill="#58A6FF" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" font-weight="600" text-anchor="middle">10 Oct 2026, 04:50 PM IST</text>
 </svg>
