@@ -101,7 +101,8 @@ relative image paths can temporarily be broken; no placeholders are checked in.
 Verify that the three statistic cards contain data and the timestamp badge
 displays the current India Standard Time. The timestamp changes with each
 successful run, so a generated-card commit is expected hourly. Fetch and
-fast-forward the local checkout after the bot publishes.
+fast-forward the local checkout after the bot publishes. The badge uses a
+clock icon, muted label, subtle outline, and blue timestamp to match the cards.
 
 ## Upstream references
 
