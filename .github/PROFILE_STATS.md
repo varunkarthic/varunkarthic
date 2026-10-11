@@ -7,11 +7,21 @@ contributions, current streak, and longest streak. The update badge shows the
 time the cards were generated in India Standard Time.
 The repository's default profile branch is `Programs`.
 
-The workflow runs hourly at minute 17 UTC and on manual dispatch. It has only
-`contents: write` permission, uses `github-actions[bot]` for commits, and stages
-only the four generated SVG paths. The timestamp badge changes on each successful
-run, so the workflow creates an hourly commit even when the statistics are
-unchanged.
+The workflow is scheduled twice hourly, at minutes 17 and 47 UTC, and can also
+be run manually. The second schedule is a fallback if GitHub delays or drops
+the first scheduled event. A gate checks the epoch timestamp embedded in the
+generated update badge and allows scheduled generation only when at least one
+hour has elapsed, so two successful schedule events cannot cause two refreshes
+in the same hour. GitHub scheduled workflows remain best-effort and can still
+be delayed or dropped.
+The workflow has only `contents: write` permission and uses
+`github-actions[bot]` for commits. Each successful run updates version query
+parameters on the README's four local SVG image references and stages those
+README changes with the four generated SVGs. This gives GitHub's image cache a
+new URL after each successful refresh so the profile README can load the newly
+generated cards instead of a cached image. The timestamp badge changes on each
+successful run, so the workflow creates an hourly commit even when the statistics
+are unchanged.
 There is no push trigger, so generated commits do not start another generation.
 The statistics-card steps use `fail_on_error: true`; the pinned streak action
 also fails the job on generation errors. Failed generation stops before the
@@ -96,7 +106,8 @@ gh run list --repo varunkarthic/varunkarthic --workflow update-stats.yml --limit
 gh run view RUN_ID --repo varunkarthic/varunkarthic --log
 ```
 
-The first successful run creates all four SVGs. Before that commit, the README's
+The first successful run creates all four SVGs and replaces the initial `?v=0`
+cache keys in the README with that run's ID. Before that commit, the README's
 relative image paths can temporarily be broken; no placeholders are checked in.
 Verify that the three statistic cards contain data and the timestamp badge
 displays the current India Standard Time. The timestamp changes with each

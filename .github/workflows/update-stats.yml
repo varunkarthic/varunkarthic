@@ -2,7 +2,8 @@ name: Update GitHub Profile Stats
 
 on:
   schedule:
-    - cron: "17 * * * *" # Hourly at 17 minutes past each hour (UTC).
+    - cron: "17 * * * *" # Primary hourly run.
+    - cron: "47 * * * *" # Backup in case GitHub delays or drops the primary run.
   workflow_dispatch:
 
 permissions:
@@ -22,7 +23,27 @@ jobs:
         with:
           persist-credentials: true
 
+      - name: Enforce one-hour refresh interval
+        id: hourly_gate
+        if: github.event_name == 'schedule'
+        shell: bash
+        run: |
+          last_refresh="$(sed -nE 's/.*data-updated-at="([0-9]+)".*/\1/p' profile/last-updated.svg)"
+          current_time="$(date +%s)"
+          if [[ ! "$last_refresh" =~ ^[0-9]+$ ]]; then
+            echo "No valid refresh timestamp found; running once to initialize the hourly gate."
+            last_refresh=0
+          fi
+          elapsed=$((current_time - last_refresh))
+          if (( elapsed >= 3600 )); then
+            echo "should_refresh=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_refresh=false" >> "$GITHUB_OUTPUT"
+            echo "The profile was refreshed ${elapsed}s ago; skipping this backup schedule."
+          fi
+
       - name: Generate GitHub statistics
+        if: github.event_name != 'schedule' || steps.hourly_gate.outputs.should_refresh == 'true'
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
@@ -34,6 +55,7 @@ jobs:
           fail_on_error: true
 
       - name: Generate language statistics
+        if: github.event_name != 'schedule' || steps.hourly_gate.outputs.should_refresh == 'true'
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
@@ -43,6 +65,7 @@ jobs:
           fail_on_error: true
 
       - name: Generate contribution streak
+        if: github.event_name != 'schedule' || steps.hourly_gate.outputs.should_refresh == 'true'
         uses: DenverCoder1/github-readme-streak-stats@d855de1a23fe45bdda5ffbc28a6d4b80b0f107e1 # v1.8.0
         with:
           options: user=varunkarthic&background=0D1117&border=0D1117&stroke=E4E2E2&ring=1F6FEB&fire=58A6FF&currStreakNum=FEFEFE&sideNums=58A6FF&currStreakLabel=FEFEFE&sideLabels=FEFEFE&dates=9E9E9E&hide_border=true&disable_animations=true
@@ -50,11 +73,13 @@ jobs:
           token: ${{ secrets.STREAK_STATS_TOKEN || secrets.STATS_PAT || github.token }}
 
       - name: Generate last-updated badge
+        if: github.event_name != 'schedule' || steps.hourly_gate.outputs.should_refresh == 'true'
         shell: bash
         run: |
+          updated_at="$(date +%s)"
           timestamp="$(TZ=Asia/Kolkata date '+%d %b %Y, %I:%M %p IST')"
           cat > profile/last-updated.svg <<EOF
-          <svg xmlns="http://www.w3.org/2000/svg" width="370" height="34" role="img" aria-label="Last updated: ${timestamp}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="370" height="34" data-updated-at="${updated_at}" role="img" aria-label="Last updated: ${timestamp}">
             <title>Last updated: ${timestamp}</title>
             <rect x="0.5" y="0.5" width="369" height="33" rx="6" fill="#0D1117" stroke="#30363D"/>
             <path d="M17 17a7 7 0 1 1 14 0a7 7 0 1 1-14 0" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
@@ -65,17 +90,30 @@ jobs:
           </svg>
           EOF
 
-      - name: Commit changed SVGs only
+      - name: Refresh README image cache keys
+        if: github.event_name != 'schedule' || steps.hourly_gate.outputs.should_refresh == 'true'
+        shell: bash
+        run: |
+          sed -i -E "s#(\./profile/(stats|top-langs|streak|last-updated)\.svg)(\?v=[^\"[:space:]]*)?#\1?v=${GITHUB_RUN_ID}#g" README.md
+          for card in stats top-langs streak last-updated; do
+            if ! grep -Fq "./profile/${card}.svg?v=${GITHUB_RUN_ID}" README.md; then
+              echo "README is missing the expected image reference for ${card}.svg." >&2
+              exit 1
+            fi
+          done
+
+      - name: Commit changed cards and README
+        if: github.event_name != 'schedule' || steps.hourly_gate.outputs.should_refresh == 'true'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- profile/stats.svg profile/top-langs.svg profile/streak.svg profile/last-updated.svg
+          git add -- README.md profile/stats.svg profile/top-langs.svg profile/streak.svg profile/last-updated.svg
           if git diff --cached --quiet; then
-            echo "No changes to profile statistics cards."
+            echo "No changes to the profile README or statistics cards."
             exit 0
           fi
           git commit -m "chore(profile): refresh generated GitHub statistics" \
-            -m "Regenerate the stats, top-languages, contribution-streak cards, and IST update badge. Only changed generated SVG files under profile/ are included." \
+            -m "Regenerate the stats, top-languages, contribution-streak cards, and IST update badge. Refresh README image cache keys so GitHub displays the generated cards." \
             -m "Generated by GitHub Actions run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}."
           git push
