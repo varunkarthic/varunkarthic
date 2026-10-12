@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Varun Karthic&#39;s GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 8, Total Commits  (last year) : 627, Total PRs: 158, Total Issues: 176, Contributed to (last year): 1</desc>
+        <desc id="descId">Total Stars Earned: 8, Total Commits  (last year) : 650, Total PRs: 164, Total Issues: 177, Contributed to (last year): 1</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 123.82772169044738;
+        stroke-dashoffset: 122.80739766169694;
       }
     }
   
@@ -184,7 +184,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >627</text>
+      >650</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -199,7 +199,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >158</text>
+      >164</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -214,7 +214,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >176</text>
+      >177</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
