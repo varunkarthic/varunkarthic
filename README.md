@@ -39,7 +39,7 @@ I'm a Computer Science student who likes building things and figuring out how th
 </td>
 <td width="40%" valign="middle" align="center">
 
-<img width="100%" src="./profile/top-langs.svg?v=39342831809" alt="Most Used Languages">
+<img width="100%" src="./profile/top-langs.svg?v=39349288963" alt="Most Used Languages">
 
 </td>
 </tr>
@@ -48,10 +48,10 @@ I'm a Computer Science student who likes building things and figuring out how th
 ## GitHub Statistics
 
 <p align="center">
-  <img width="49%" src="./profile/stats.svg?v=39342831809" alt="GitHub Stats">
-  <img width="49%" src="./profile/streak.svg?v=39342831809" alt="GitHub Streak">
+  <img width="49%" src="./profile/stats.svg?v=39349288963" alt="GitHub Stats">
+  <img width="49%" src="./profile/streak.svg?v=39349288963" alt="GitHub Streak">
 </p>
 
 <p align="center">
-  <img src="./profile/last-updated.svg?v=39342831809" alt="Last updated in India Standard Time">
+  <img src="./profile/last-updated.svg?v=39349288963" alt="Last updated in India Standard Time">
 </p>
