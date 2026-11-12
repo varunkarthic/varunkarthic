@@ -138,7 +138,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="106.5"
+          width="106.52"
           height="8"
           fill="#dea584"
         />
@@ -146,9 +146,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="106.5"
+          x="106.52"
           y="0"
-          width="58.56"
+          width="58.55"
           height="8"
           fill="#3178c6"
         />
@@ -156,7 +156,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="165.06"
+          x="165.07"
           y="0"
           width="46.42"
           height="8"
@@ -166,7 +166,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="211.48000000000002"
+          x="211.49"
           y="0"
           width="15.8"
           height="8"
@@ -176,9 +176,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="227.28000000000003"
+          x="227.29000000000002"
           y="0"
-          width="11.86"
+          width="11.85"
           height="8"
           fill="#3572A5"
         />
@@ -186,7 +186,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="239.14000000000004"
+          x="239.14000000000001"
           y="0"
           width="14.61"
           height="8"
@@ -196,7 +196,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="243.75000000000006"
+          x="243.75000000000003"
           y="0"
           width="14.57"
           height="8"
@@ -206,7 +206,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="248.32000000000005"
+          x="248.32000000000002"
           y="0"
           width="11.68"
           height="8"
@@ -219,7 +219,7 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#dea584" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Rust 42.60%
+        Rust 42.61%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
