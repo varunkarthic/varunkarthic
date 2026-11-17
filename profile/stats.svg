@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Varun Karthic&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 10, Total Commits  (last year) : 1072, Total PRs: 276, Total Issues: 449, Contributed to (last year): 4</desc>
+        <desc id="descId">Total Stars Earned: 10, Total Commits  (last year) : 1080, Total PRs: 276, Total Issues: 449, Contributed to (last year): 4</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 86.49855337269976;
+        stroke-dashoffset: 86.4515163472254;
       }
     }
   
